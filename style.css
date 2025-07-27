@@ -1,0 +1,121 @@
+:root {
+  --bg-light: #f9f9f9;
+  --bg-dark: #121212;
+  --text-light: #121212;
+  --text-dark: #f9f9f9;
+  --accent: #00bcd4;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-bottom: 100px; /* for footer space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+  background: var(--bg-light);
+  color: var(--text-light);
+}
+
+body.dark-theme {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+/* Stopwatch styles */
+.stopwatch {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#time {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--accent);
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #008ba3;
+}
+
+#laps {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+#laps li {
+  padding: 5px;
+}
+
+.theme-toggle {
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 2px solid var(--accent);
+  border-radius: 5px;
+  color: inherit;
+  transition: background 0.3s, color 0.3s;
+}
+
+@media (max-width: 600px) {
+  #time {
+    font-size: 2rem;
+  }
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  background-color: #f2f2f2;
+  color: #000;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer .social-icons {
+  margin: 5px 0;
+}
+
+.footer .social-icons a img {
+  width: 24px;
+  height: 24px;
+  margin: 0 8px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.footer .social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+/* Dark theme footer */
+body.dark-theme .footer {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-theme .footer .social-icons a img:hover {
+  filter: brightness(1.3);
+}
