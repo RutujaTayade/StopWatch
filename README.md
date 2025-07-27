@@ -31,8 +31,8 @@ A responsive and accurate stopwatch built using pure **HTML, CSS, and JavaScript
 **🔗 Project Demo**
 
 🌍 **Live Site**: [https://rutujatayade.github.io/Stopwatch/](https://rutujatayade.github.io/Stopwatch/)  
-📂 **GitHub Repo**: [https://github.com/RutujaTayade/Stopwatch](https://github.com/RutujaTayade/Stopwatch)  
-🖇 **LinkedIn**: [https://www.linkedin.com/in/rutuja-tayade-15a680357/](https://www.linkedin.com/in/rutuja-tayade-15a680357/)
+📂 **GitHub Repo**: [https://github.com/RutujaTayade/StopWatch]  
+🖇 **LinkedIn**: [https://www.linkedin.com/in/rutuja-tayade-15a680357/]
 
 **🧠 Future Enhancements**
 
